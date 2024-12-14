@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   valid_info.c                                       :+:      :+:    :+:   */
+/*   valid_info_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inryu <inryu@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: sehwjang <sehwjang@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 16:57:27 by inryu             #+#    #+#             */
-/*   Updated: 2024/08/21 13:40:38 by inryu            ###   ########.fr       */
+/*   Updated: 2024/08/21 16:45:42 by sehwjang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parser.h"
+#include "parser_bonus.h"
 
 int	check_sides(int i, int j, t_info *info)
 {

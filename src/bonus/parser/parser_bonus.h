@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   parser.h                                           :+:      :+:    :+:   */
+/*   parser_bonus.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inryu <inryu@student.42seoul.kr>           +#+  +:+       +#+        */
+/*   By: sehwjang <sehwjang@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 12:56:54 by inryu             #+#    #+#             */
-/*   Updated: 2024/08/21 13:40:09 by inryu            ###   ########.fr       */
+/*   Updated: 2024/08/21 16:45:49 by sehwjang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PARSER_H
-# define PARSER_H
+#ifndef PARSER_BONUS_H
+# define PARSER_BONUS_H
 
 # include <stdbool.h>
 # include <stdlib.h>
-# include "../cub3D.h"
+# include "../cub3D_bonus.h"
 
 typedef struct s_check
 {

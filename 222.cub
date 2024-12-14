@@ -1,0 +1,13 @@
+NO ./texture/test1.xpm
+SO ./texture/wall.xpm
+WE ./texture/wall_big.xpm
+EA ./texture/tile.xpm
+
+F 0,255,0
+C 225,30,0
+
+111111
+100001
+100N01
+100001
+111111

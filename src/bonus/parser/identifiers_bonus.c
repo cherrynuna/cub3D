@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   identifiers.c                                      :+:      :+:    :+:   */
+/*   identifiers_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: inryu <inryu@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/01 13:14:03 by inryu             #+#    #+#             */
-/*   Updated: 2024/08/23 14:59:40 by inryu            ###   ########.fr       */
+/*   Updated: 2024/08/23 14:57:09 by inryu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "parser.h"
-#include "utils.h"
+#include "parser_bonus.h"
+#include "utils_bonus.h"
 
 bool	get_color(char *s, t_info *info, char c)
 {
@@ -22,14 +22,13 @@ bool	get_color(char *s, t_info *info, char c)
 	if (ft_strcmp(s, "") == 0)
 		print_error("wrong color");
 	tmp = ft_split(s, ',');
-	if (tmp == NULL)
-		print_error("wrong color");
 	i = 0;
-	while (tmp[i] && i < 3)
+	while (tmp[i] || i < 3)
 	{
 		rgb[i] = cd_atoi(tmp[i]);
-		if (cd_iscolor(rgb[i++]) == 0)
+		if (cd_iscolor(rgb[i]) == 0)
 			print_error("wrong color");
+		i++;
 	}
 	if (i != 3)
 		print_error("wrong color");
